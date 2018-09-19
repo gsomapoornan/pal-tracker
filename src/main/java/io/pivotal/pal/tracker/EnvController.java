@@ -12,7 +12,7 @@ public class EnvController {
 
 
     Map<String,String> envVariables=new HashMap(0);
-    String PORT,MEMORY_LIMIT,CF_INSTANCE_INDEX,CF_INSTANCE_ADDR;
+    String PORT,MEMORY_LIMIT,CF_INSTANCE_INDEX,CF_INSTANCE_ADDR; 
 
     @GetMapping("/env")
     public Map<String, String> getEnv()
