@@ -38,6 +38,10 @@ public class TimeEntry {
         this.id = id;
     }
 
+    public TimeEntry() {
+
+    }
+
     public TimeEntry(long l, long l1, long l2, LocalDate parse, int i) {
         this.id = l;
         this.projectId = l1;
