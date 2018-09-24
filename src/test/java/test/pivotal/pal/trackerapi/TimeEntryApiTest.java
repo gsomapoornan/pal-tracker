@@ -107,12 +107,12 @@ public class TimeEntryApiTest {
 
         assertThat(updateResponse.getStatusCode()).isEqualTo(HttpStatus.OK);
 
-        /*DocumentContext updateJson = parse(updateResponse.getBody());
+        DocumentContext updateJson = parse(updateResponse.getBody());
         assertThat(updateJson.read("$.id", Long.class)).isEqualTo(id);
         assertThat(updateJson.read("$.projectId", Long.class)).isEqualTo(2L);
         assertThat(updateJson.read("$.userId", Long.class)).isEqualTo(3L);
         assertThat(updateJson.read("$.date", String.class)).isEqualTo("2017-01-09");
-        assertThat(updateJson.read("$.hours", Long.class)).isEqualTo(9);*/
+        assertThat(updateJson.read("$.hours", Long.class)).isEqualTo(9);
     }
 
     @Test
