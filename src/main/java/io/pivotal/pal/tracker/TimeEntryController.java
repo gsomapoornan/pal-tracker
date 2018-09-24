@@ -49,11 +49,11 @@ public class TimeEntryController {
 
         TimeEntry timeEntry1=timeEntryRepository.update(id,timeEntry);
 
-        if (timeEntry.getId() >0) {
-            return new ResponseEntity<>(timeEntry, HttpStatus.OK);
+        if (timeEntry1.getId() >0) {
+            return new ResponseEntity<>(timeEntry1, HttpStatus.OK);
         }
         else {
-            return new ResponseEntity<>(timeEntry, HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(timeEntry1, HttpStatus.NOT_FOUND);
         }
     }
 
